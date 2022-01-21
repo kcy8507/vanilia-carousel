@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.slide-wrapper {
+  position: relative;
+  overflow: hidden;
+  .slide-container {
+    width: 300vw;
+    transition: transform 1s;
+    .slide {
+      //   width: 500px;
+      //   height: 500px;
+      width: 100vw;
+      height: 50vh;
+      float: left;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: #2f2f2f;
+  background: rgb(246, 246, 246);
+}
+
+.slide-nav {
+  position: absolute;
+  top: 25%;
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+}
